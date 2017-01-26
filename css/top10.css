@@ -1,0 +1,102 @@
+html {
+  background-color: #DCCECE;
+  }
+
+  .bodywrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.title {
+  flex: 1 100%;
+  text-align: center;
+  width: 100%;
+  border: 3px solid black;
+
+}
+.aside {
+  flex: 2 50%;
+}
+.aside2 {
+    text-align: center;
+
+}
+
+.footer {
+  flex: 3;
+  text-align: center;
+
+}
+
+/*@media all and (min-width: 600px) {
+    .aside { flex: 1;}
+    .footer {flex: 2;}*/
+
+    /*.aside1 { order: 1}
+    .aside2 { order: 2}
+    .footer { order: 3}
+  }*/
+
+.footer1 {
+  flex: 1;
+}
+
+.footer2 .fa {
+  flex: 1;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(0, 0, 255, 0.8);
+  /*padding-top: 10px;*/
+}
+
+.footer2 .fa:hover {
+  box-shadow: 1px 1px 1px #333;
+}
+
+
+.fa {
+  display: inline-block;
+}
+.fa:hover {
+  animation-name: hvr-bob;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+
+.footer2 .fa{
+  -webkit- animation: hvr-bob 10s infinite;
+
+}
+
+@keyframes hvr-bob {
+  0% {
+    transform: translateY(-2px);
+  }
+  25% {
+    transform: translateY(-4px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}
+
+/*@keyframes hvr-bob-float {
+  100% {
+    transform: translateY(-8px);
+  }
+}*/
+
+.footer3 {
+  flex: 1;
+  text-align: left;
+}
